@@ -1,0 +1,56 @@
+{
+  "name": "aml/oz",
+  "description": "amlazy.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "AML",
+      "email": "anatolii.warlock@gmail.com",
+      "homepage": "http://amlazy.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Oz\\": "core/Oz",
+      "Oz\\Config\\": "config",
+      "Oz\\Plugin\\": "plugin",
+      "Oz\\Node\\": "nodes",
+      "Api\\": "nodes/api/core/Api"
+    }
+  },
+  "require": {
+    "twig/twig": "^3.0",
+    "laminas/laminas-db": "^2.15",
+    "laminas/laminas-cache": "^3.1",
+    "phpmailer/phpmailer": "^6.6",
+    "phpstan/phpstan": "^1.7",
+    "laminas/laminas-cache-storage-adapter-apcu": "^2.0",
+    "laminas/laminas-cache-storage-adapter-redis": "^2.3",
+    "laminas/laminas-component-installer": "^2.7",
+    "psr/cache": "^1.0",
+    "laminas/laminas-stdlib": "^3.10",
+    "ext-apcu": "*",
+    "ext-curl": "*",
+    "ext-simplexml": "*",
+    "ext-soap": "*"
+  },
+    "require-dev": {
+      "roave/security-advisories": "dev-latest"
+      ,
+      "laminas/laminas-cache-storage-adapter-blackhole": "^2.0",
+    "laminas/laminas-cache-storage-adapter-filesystem": "^2.0",
+    "laminas/laminas-cache-storage-adapter-memory": "^2.0",
+    "laminas/laminas-cache-storage-adapter-test": "^2.0"
+  },
+  
+  "replace": {
+    "container-interop/container-interop": "^1.2.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "laminas/laminas-component-installer": true
+    }
+  }
+}

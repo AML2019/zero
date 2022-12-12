@@ -1,0 +1,11 @@
+parameters:
+	phpVersion: 80000
+	level: 8
+	checkMissingIterableValueType: true
+	checkGenericClassInNonGenericObjectType: true
+	paths:
+		- core
+		- config
+	ignoreErrors:
+	parallel:
+		maximumNumberOfProcesses: 1
